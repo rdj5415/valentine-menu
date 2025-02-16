@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <title>Valentine's Day Menu - 1915</title>
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link 
@@ -13,7 +12,6 @@
   >
 
   <style>
-    /* RESET & PAGE SETTINGS */
     html, body {
       margin: 0;
       padding: 0;
@@ -22,40 +20,36 @@
       -webkit-print-color-adjust: exact;
     }
     @page {
-      size: letter; /* 8.5" x 11" */
-      margin: 0;    /* Remove default margins if printer allows */
+      size: letter; 
+      margin: 0;    
     }
 
-    /* BODY: white background so pink fade on .page stands out */
     body {
       background: #fff;
       font-family: 'Quicksand', sans-serif;
-      font-size: 4rem;  /* Larger base font size */
+      font-size: 4rem;  
       color: #333;
     }
 
-    /* PAGE CONTAINER: exactly 8.5 x 11 inches, pinned footer requires position: relative */
     .page {
       width: 8.5in;
       height: 11in;
       margin: 0 auto;
       box-sizing: border-box;
       position: relative; 
-      padding: 0.5in;     /* Slight internal padding */
+      padding: 0.5in;     
 
-      /* Very light pink fade from center to edges + subtle inset glow */
       background: radial-gradient(circle, #ffffff 50%, #ffe6ec 100%);
       box-shadow: inset 0 0 60px rgba(255, 182, 193, 0.2);
     }
 
-    /* HEADER */
     .header {
       text-align: center;
       margin-bottom: 1rem;
     }
     .header .restaurant-name {
       font-family: 'Great Vibes', cursive;
-      font-size: 3.8rem; /* Larger cursive heading */
+      font-size: 3.8rem; 
       color: #e91e63;
       margin-bottom: 0.2rem;
     }
@@ -65,7 +59,6 @@
       color: #e91e63;
     }
 
-    /* HEART DIVIDER */
     .heart-divider {
       display: flex;
       align-items: center;
@@ -84,7 +77,6 @@
       fill: #e91e63;
     }
 
-    /* SECTION HEADINGS (Cursive) */
     h2 {
       font-family: 'Great Vibes', cursive;
       font-size: 2.6rem;
@@ -93,7 +85,6 @@
       margin-bottom: 0.3rem;
     }
 
-    /* MENU SECTIONS & ITEMS */
     .menu-section {
       margin-bottom: 1.2rem;
     }
@@ -113,28 +104,27 @@
       text-align: center;
     }
 
-    /* FOOTER - pinned to bottom of .page */
     .footer {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
       text-align: center;
-      font-size: 1.1rem; /* Larger than before */
+      font-size: 1.1rem; 
       color: #999;
-      padding-bottom: 0.3rem; /* small gap from the very bottom */
+      padding-bottom: 0.3rem; 
     }
   </style>
 </head>
 <body>
   <div class="page">
-    <!-- HEADER -->
+
     <div class="header">
       <div class="restaurant-name">1915</div>
       <div class="menu-title">Valentine’s Day Menu</div>
     </div>
 
-    <!-- HEART DIVIDER -->
+
     <div class="heart-divider">
       <hr>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -148,7 +138,6 @@
       <hr>
     </div>
 
-    <!-- DRINK -->
     <div class="menu-section">
       <h2>Drink</h2>
       <div class="item-name">Marry Me Mojito</div>
@@ -158,7 +147,6 @@
       </div>
     </div>
 
-    <!-- APPETIZER -->
     <div class="menu-section">
       <h2>Appetizer</h2>
       <div class="item-name">Blushing Bruschetta</div>
@@ -168,7 +156,6 @@
       </div>
     </div>
 
-    <!-- MAIN -->
     <div class="menu-section">
       <h2>Main</h2>
       <div class="item-name">Cupid's Chicken Parm</div>
@@ -178,7 +165,6 @@
       </div>
     </div>
 
-    <!-- DESSERT -->
     <div class="menu-section">
       <h2>Dessert</h2>
       <div class="item-name">Lovestruck Lava Cake</div>
@@ -188,7 +174,6 @@
       </div>
     </div>
 
-    <!-- FOOTER (Pinned at bottom) -->
     <div class="footer">
       © 2025 Restaurant 1915 ♡ Happy Valentine’s Day ___ ♡
     </div>
