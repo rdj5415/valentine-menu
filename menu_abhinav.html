@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Valentine's Day Menu - 1915</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300;500;700&display=swap" 
+    rel="stylesheet"
+  >
+
+  <style>
+    /* RESET & PAGE SETTINGS */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-print-color-adjust: exact;
+    }
+    @page {
+      size: letter; /* 8.5" x 11" */
+      margin: 0;    /* Remove default margins if printer allows */
+    }
+
+    /* BODY: white background so pink fade on .page stands out */
+    body {
+      background: #fff;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 4rem;  /* Larger base font size */
+      color: #333;
+    }
+
+    /* PAGE CONTAINER: exactly 8.5 x 11 inches, pinned footer requires position: relative */
+    .page {
+      width: 8.5in;
+      height: 11in;
+      margin: 0 auto;
+      box-sizing: border-box;
+      position: relative; 
+      padding: 0.5in;     /* Slight internal padding */
+
+      /* Very light pink fade from center to edges + subtle inset glow */
+      background: radial-gradient(circle, #ffffff 50%, #ffe6ec 100%);
+      box-shadow: inset 0 0 60px rgba(255, 182, 193, 0.2);
+    }
+
+    /* HEADER */
+    .header {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .header .restaurant-name {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.8rem; /* Larger cursive heading */
+      color: #e91e63;
+      margin-bottom: 0.2rem;
+    }
+    .header .menu-title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #e91e63;
+    }
+
+    /* HEART DIVIDER */
+    .heart-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem 0;
+    }
+    .heart-divider hr {
+      flex: 1;
+      border: none;
+      border-top: 2px dashed #f48fb1;
+      margin: 0 0.5rem;
+    }
+    .heart-divider svg {
+      width: 24px;
+      height: 24px;
+      fill: #e91e63;
+    }
+
+    /* SECTION HEADINGS (Cursive) */
+    h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.6rem;
+      text-align: center;
+      color: #e91e63;
+      margin-bottom: 0.3rem;
+    }
+
+    /* MENU SECTIONS & ITEMS */
+    .menu-section {
+      margin-bottom: 1.2rem;
+    }
+    .item-name {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #c2185b;
+      margin-bottom: 0.3rem;
+      text-align: center;
+    }
+    .item-description {
+      font-size: 1.3rem;
+      color: #555;
+      line-height: 1.4;
+      margin: 0 auto;
+      max-width: 650px; 
+      text-align: center;
+    }
+
+    /* FOOTER - pinned to bottom of .page */
+    .footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 1.1rem; /* Larger than before */
+      color: #999;
+      padding-bottom: 0.3rem; /* small gap from the very bottom */
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- HEADER -->
+    <div class="header">
+      <div class="restaurant-name">1915</div>
+      <div class="menu-title">Valentine’s Day Menu</div>
+    </div>
+
+    <!-- HEART DIVIDER -->
+    <div class="heart-divider">
+      <hr>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path d="M462.3 62.7c-54.5-46.4-136-38.3-186.4 13.7L256 96.6
+                 l-19.9-20.2c-50.4-52-131.9-60.1-186.4-13.7
+                 c-62.2 53.1-66.1 149.8-9.9 207.3
+                 l193.4 199.8c10 10.3 23.7 10.3 33.7 0
+                 l193.4-199.8
+                 c56.2-57.6 52.3-154.2-9.9-207.3z"/>
+      </svg>
+      <hr>
+    </div>
+
+    <!-- DRINK -->
+    <div class="menu-section">
+      <h2>Drink</h2>
+      <div class="item-name">Marry Me Mojito</div>
+      <div class="item-description">
+        A bright blend of mango and mint, topped with club soda and served over ice 
+        for a crisp, uplifting sip.
+      </div>
+    </div>
+
+    <!-- APPETIZER -->
+    <div class="menu-section">
+      <h2>Appetizer</h2>
+      <div class="item-name">Blushing Bruschetta</div>
+      <div class="item-description">
+        Grilled baguette with ripe tomatoes, basil, and mozzarella. 
+        Finished with garlic salt and a balsamic drizzle.
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="menu-section">
+      <h2>Main</h2>
+      <div class="item-name">Cupid's Chicken Parm</div>
+      <div class="item-description">
+        Crispy chicken, melted mozzarella, and sun-dried tomato pesto on a toasted 
+        baguette, with a smooth vodka sauce.
+      </div>
+    </div>
+
+    <!-- DESSERT -->
+    <div class="menu-section">
+      <h2>Dessert</h2>
+      <div class="item-name">Lovestruck Lava Cake</div>
+      <div class="item-description">
+        A rich chocolate cake with a molten Oreo center that melts on the tongue, 
+        perfect for a sweet finale.
+      </div>
+    </div>
+
+    <!-- FOOTER (Pinned at bottom) -->
+    <div class="footer">
+      © 2025 Restaurant 1915 ♡ Happy Valentine’s Day ___ ♡
+    </div>
+  </div>
+</body>
+</html>
